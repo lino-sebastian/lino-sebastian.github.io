@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lino Sebastian | Senior Software Engineer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bgDark: '#080c14',
+                        cardDark: '#0f172a',
+                        borderDark: '#1e293b',
+                        accentBlue: '#38bdf8',
+                        accentPurple: '#818cf8',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gradient-text {
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glow-avatar {
+            box-shadow: 0 0 35px -5px rgba(56, 189, 248, 0.25);
+        }
+    </style>
+</head>
+<body class="bg-bgDark text-slate-300 font-sans antialiased selection:bg-accentBlue selection:text-bgDark">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full backdrop-blur-md bg-bgDark/80 z-50 border-b border-borderDark">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold tracking-tight text-white">LS<span class="text-accentBlue">.</span></a>
+            <div class="space-x-6 text-sm font-medium hidden md:block">
+                <a href="#about" class="hover:text-accentBlue transition">About</a>
+                <a href="#skills" class="hover:text-accentBlue transition">Skills</a>
+                <a href="#projects" class="hover:text-accentBlue transition">Projects</a>
+                <a href="#experience" class="hover:text-accentBlue transition">Experience</a>
+                <a href="#certifications" class="hover:text-accentBlue transition">Certifications</a>
+                <a href="#education" class="hover:text-accentBlue transition">Education</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-6 pt-32 pb-20 space-y-28">
+
+        <!-- Split Hero Section -->
+        <section id="about" class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Profile Image Column -->
+            <div class="lg:col-span-4 flex justify-center lg:justify-start">
+                <div class="relative group">
+                    <div class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-accentBlue to-accentPurple opacity-30 group-hover:opacity-60 transition duration-500 blur"></div>
+                    <div class="relative w-64 h-80 sm:w-72 sm:h-96 rounded-2xl overflow-hidden border border-borderDark bg-cardDark glow-avatar">
+                        <!-- REPLACE 'profile.jpg' with your actual uploaded filename -->
+                        <img src="profile.jpg" alt="Lino Sebastian" class="w-full h-full object-cover object-center grayscale hover:grayscale-0 transition duration-500">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content Column -->
+            <div class="lg:col-span-8 space-y-6">
+                <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-accentBlue/10 border border-accentBlue/20 text-accentBlue text-xs font-mono">
+                    <span class="w-2 h-2 rounded-full bg-accentBlue animate-pulse"></span>
+                    <span>Senior Software Development Engineer</span>
+                </div>
+                <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight">
+                    Hi, I'm <span class="gradient-text">Lino Sebastian</span>.
+                </h1>
+                <p class="text-lg text-slate-400 leading-relaxed">
+                    8 years of experience engineering high-scale distributed systems, microservices, and cloud-native SaaS applications across banking, travel, and insurance domains. Specialized in Java/Kotlin, AWS serverless ecosystems, and event-driven architectures.
+                </p>
+
+                <!-- Key Metrics Strip -->
+                <div class="grid grid-cols-3 gap-4 pt-2 border-y border-borderDark py-4 font-mono text-xs">
+                    <div>
+                        <span class="block text-xl font-bold text-white">6+</span>
+                        <span class="text-slate-500">Years Exp.</span>
+                    </div>
+                    <div>
+                        <span class="block text-xl font-bold text-white">95%+</span>
+                        <span class="text-slate-500">Test Coverage</span>
+                    </div>
+                    <div>
+                        <span class="block text-xl font-bold text-white">4</span>
+                        <span class="text-slate-500">Enterprise Clients</span>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap gap-4 pt-2">
+                    <a href="mailto:lino.lsebastian@gmail.com" class="px-6 py-3 rounded-lg bg-accentBlue text-bgDark font-semibold hover:bg-sky-300 transition flex items-center space-x-2">
+                        <i class="fa-regular font-bold fa-envelope"></i>
+                        <span>Contact Me</span>
+                    </a>
+                    <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" class="px-6 py-3 rounded-lg bg-cardDark text-slate-200 font-semibold border border-borderDark hover:bg-slate-800 transition flex items-center space-x-2">
+                        <i class="fa-brands fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://linkedin.com/in/YOUR_LINKEDIN_USERNAME" target="_blank" class="px-6 py-3 rounded-lg bg-cardDark text-slate-200 font-semibold border border-borderDark hover:bg-slate-800 transition flex items-center space-x-2">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Technical Expertise -->
+        <section id="skills" class="space-y-8">
+            <h2 class="text-2xl font-bold text-white flex items-center space-x-3">
+                <span class="text-accentBlue font-mono text-lg">01.</span>
+                <span>Technical Expertise</span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                
+                <div class="p-6 rounded-xl bg-cardDark border border-borderDark space-y-3">
+                    <div class="text-accentBlue text-xl"><i class="fa-solid fa-code"></i></div>
+                    <h3 class="text-lg font-semibold text-white">Backend & Languages</h3>
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="px-3 py-1 bg-slate-800 text-xs text-slate-300 rounded-md font-mono border border-slate-700">Java 17</span>
+                        <span class="px-3 py-1 bg-slate-800 text-xs text-slate-300 rounded-md font-mono border border-slate-700">Kotlin</span>
+                        <span class="px-3 py-1 bg-slate-800 text-xs text-slate-300 rounded-md font-mono border border-slate-700">Python</span>
+                        <span class="px-3 py-1 bg-slate-800 text-xs text-slate-300 rounded-md font-mono border border-slate-700">Spring Boot</span>
+                        <span class="px-3 py-1 bg-slate-800 text-xs text-slate-300 rounded-md font-mono border border-slate-700">REST APIs</span>
+                        <span class="px-3 py-1 bg-slate-800 text-xs text-slate-300 rounded-md font-mono border border-slate-700">GraphQL</span>
+                    </div>
+                </div>
+
+                <div class="p-6 rounded-xl bg-cardDark border border-borderDark space-y-3">
+                    <div class="text-accentPurple text-xl"><i class="fa-solid fa-cloud"></i></div>
+                    <h3 class="text-lg font-semibold text-white">Cloud & DevOps</h3>
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="px-3 py-1 bg-slate-800 text-xs text-slate-300 rounded-md font-mono border border-slate-700">AWS (Lambda, SQS, EventBridge)</span>
+                        <span class="px-3 py-1 bg-slate-800 text-xs text-slate-300 rounded-md font-mono border border-slate-700">DynamoDB</span>
+                        <span class="px-3 py-1 bg-slate-800 text-xs text-slate-300 rounded-md font-mono border border-slate-700">Docker</span>
+                        <span class="px-3 py-1 bg-slate-800 text-xs text-slate-300 rounded-md font-mono border border-slate-700">Kubernetes</span>
+                        <span class="px-3 py-1 bg-slate-800 text-xs text-slate-300 rounded-md font-mono border border-slate-700">Jenkins</span>
+                    </div>
+                </div>
+
+                <div class="p-6 rounded-xl bg-cardDark border border-borderDark space-y-3">
+                    <div class="text-accentBlue text-xl"><i class="fa-solid fa-sitemap"></i></div>
+                    <h3 class="text-lg font-semibold text-white">Architecture & Patterns</h3>
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="px-3 py-1 bg-slate-800 text-xs text-slate-300 rounded-md font-mono border border-slate-700">Distributed Systems</span>
+                        <span class="px-3 py-1 bg-slate-800 text-xs text-slate-300 rounded-md font-mono border border-slate-700">Hexagonal Architecture</span>
+                        <span class="px-3 py-1 bg-slate-800 text-xs text-slate-300 rounded-md font-mono border border-slate-700">Event-Driven (Kafka, SQS)</span>
+                        <span class="px-3 py-1 bg-slate-800 text-xs text-slate-300 rounded-md font-mono border border-slate-700">Serverless</span>
+                    </div>
+                </div>
+
+                <div class="p-6 rounded-xl bg-cardDark border border-borderDark space-y-3">
+                    <div class="text-accentPurple text-xl"><i class="fa-solid fa-database"></i></div>
+                    <h3 class="text-lg font-semibold text-white">Data & Observability</h3>
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="px-3 py-1 bg-slate-800 text-xs text-slate-300 rounded-md font-mono border border-slate-700">PostgreSQL</span>
+                        <span class="px-3 py-1 bg-slate-800 text-xs text-slate-300 rounded-md font-mono border border-slate-700">MySQL</span>
+                        <span class="px-3 py-1 bg-slate-800 text-xs text-slate-300 rounded-md font-mono border border-slate-700">Cassandra</span>
+                        <span class="px-3 py-1 bg-slate-800 text-xs text-slate-300 rounded-md font-mono border border-slate-700">MongoDB</span>
+                        <span class="px-3 py-1 bg-slate-800 text-xs text-slate-300 rounded-md font-mono border border-slate-700">Kibana / ELK</span>
+                        <span class="px-3 py-1 bg-slate-800 text-xs text-slate-300 rounded-md font-mono border border-slate-700">React</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="space-y-8">
+            <h2 class="text-2xl font-bold text-white flex items-center space-x-3">
+                <span class="text-accentBlue font-mono text-lg">02.</span>
+                <span>Self-Constructed Projects</span>
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="p-6 rounded-xl bg-cardDark border border-borderDark space-y-4">
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs font-mono text-accentBlue">Microservices Architecture</span>
+                        <i class="fa-solid fa-cart-shopping text-slate-500"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white">Bona Fide Shopping Cart</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Production-grade MVP shopping cart built using multi-module Spring Boot services and Hexagonal Architecture. Features user registration, JWT auth, dedicated reverse proxy, and Cassandra DB persistence.
+                    </p>
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="text-xs font-mono px-2 py-1 bg-slate-800 text-slate-300 rounded">Java</span>
+                        <span class="text-xs font-mono px-2 py-1 bg-slate-800 text-slate-300 rounded">Spring Boot</span>
+                        <span class="text-xs font-mono px-2 py-1 bg-slate-800 text-slate-300 rounded">React</span>
+                        <span class="text-xs font-mono px-2 py-1 bg-slate-800 text-slate-300 rounded">Cassandra</span>
+                        <span class="text-xs font-mono px-2 py-1 bg-slate-800 text-slate-300 rounded">Docker</span>
+                    </div>
+                </div>
+
+                <div class="p-6 rounded-xl bg-cardDark border border-borderDark space-y-4">
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs font-mono text-accentPurple">Healthcare Analytics</span>
+                        <i class="fa-solid fa-chart-line text-slate-500"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white">NHS Data Query Tool</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Analytics webservice engineered to consume bulk CSV healthcare data, process identifiable patient metrics, and offer interactive visualization of hospital admissions by age, sex, and ethnicity.
+                    </p>
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="text-xs font-mono px-2 py-1 bg-slate-800 text-slate-300 rounded">Java</span>
+                        <span class="text-xs font-mono px-2 py-1 bg-slate-800 text-slate-300 rounded">GraphQL</span>
+                        <span class="text-xs font-mono px-2 py-1 bg-slate-800 text-slate-300 rounded">MySQL</span>
+                        <span class="text-xs font-mono px-2 py-1 bg-slate-800 text-slate-300 rounded">Flyway</span>
+                        <span class="text-xs font-mono px-2 py-1 bg-slate-800 text-slate-300 rounded">React</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work History -->
+        <section id="experience" class="space-y-8">
+            <h2 class="text-2xl font-bold text-white flex items-center space-x-3">
+                <span class="text-accentBlue font-mono text-lg">03.</span>
+                <span>Work History</span>
+            </h2>
+            
+            <div class="relative border-l-2 border-borderDark ml-3 space-y-12">
+                
+                <div class="relative pl-8 group">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-cardDark border-2 border-accentBlue group-hover:bg-accentBlue transition"></div>
+                    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-2">
+                        <h3 class="text-xl font-bold text-white">Senior Software Engineer <span class="text-accentBlue">@ UST</span></h3>
+                        <span class="text-xs font-mono text-slate-400">2024 - Present | Client: Capital One (UK)</span>
+                    </div>
+                    <ul class="list-disc list-inside space-y-2 text-slate-400 text-sm leading-relaxed">
+                        <li>Designed and deployed serverless microservices in AWS supporting high-volume financial transaction processing.</li>
+                        <li>Built loosely-coupled event-driven architectures leveraging SQS and EventBridge for resilient workflows.</li>
+                        <li>Owned end-to-end delivery from initial architecture drafts through CI/CD production pipelines.</li>
+                        <li>Mentored junior engineers on cloud-native design patterns, unit testing, and engineering standards.</li>
+                    </ul>
+                </div>
+
+                <div class="relative pl-8 group">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-cardDark border-2 border-slate-600 group-hover:border-accentBlue transition"></div>
+                    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-2">
+                        <h3 class="text-xl font-bold text-white">Senior System Engineer <span class="text-accentBlue">@ IBM</span></h3>
+                        <span class="text-xs font-mono text-slate-400">2021 - 2024 | Client: Atradius</span>
+                    </div>
+                    <ul class="list-disc list-inside space-y-2 text-slate-400 text-sm leading-relaxed">
+                        <li>Engineered enterprise-grade, multi-tenant microservices using Spring Boot.</li>
+                        <li>Spearheaded architectural migration from monolith structures to modular, distributed microservices.</li>
+                        <li>Automated CI/CD workflows using Jenkins and containerized services using Docker & Kubernetes.</li>
+                    </ul>
+                </div>
+
+                <div class="relative pl-8 group">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-cardDark border-2 border-slate-600 group-hover:border-accentBlue transition"></div>
+                    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-2">
+                        <h3 class="text-xl font-bold text-white">Senior Software Engineer <span class="text-accentBlue">@ IBS Software</span></h3>
+                        <span class="text-xs font-mono text-slate-400">2018 - 2021 | Client: Egencia</span>
+                    </div>
+                    <ul class="list-disc list-inside space-y-2 text-slate-400 text-sm leading-relaxed">
+                        <li>Implemented Loyalty/Subscription card selection on Egencia checkout, mitigating fraudulent reward redemptions.</li>
+                        <li>Accelerated MVP delivery by 2 sprints by managing fast-pace integration of search, booking, and cancellation workflows with GDS.</li>
+                        <li>Adopted WireMock to mock service workflow acceptance criteria, saving half a sprint for QA cycles.</li>
+                        <li>Spearheaded transition to Kotlin microservices; hosted peer training sessions to build team core competency.</li>
+                        <li>Created Kibana dashboards for travel booking metrics and configured PagerDuty alerting systems.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Certifications -->
+        <section id="certifications" class="space-y-8">
+            <h2 class="text-2xl font-bold text-white flex items-center space-x-3">
+                <span class="text-accentBlue font-mono text-lg">04.</span>
+                <span>Certifications</span>
+            </h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <a href="https://www.credly.com/badges/f3232090-3c96-45e3-9e62-fc38353a3a26" target="_blank" class="p-4 rounded-xl bg-cardDark border border-borderDark hover:border-accentBlue transition group flex items-center justify-between">
+                    <div>
+                        <p class="text-sm font-bold text-white group-hover:text-accentBlue transition">Agile Explorer</p>
+                        <p class="text-xs text-slate-500 font-mono">Credly Verified</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-up-right-from-square text-xs text-slate-500 group-hover:text-accentBlue"></i>
+                </a>
+                <a href="https://www.credly.com/badges/60a8755d-6161-4474-a1c8-9741083103a9" target="_blank" class="p-4 rounded-xl bg-cardDark border border-borderDark hover:border-accentBlue transition group flex items-center justify-between">
+                    <div>
+                        <p class="text-sm font-bold text-white group-hover:text-accentBlue transition">Agile Advocate</p>
+                        <p class="text-xs text-slate-500 font-mono">Credly Verified</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-up-right-from-square text-xs text-slate-500 group-hover:text-accentBlue"></i>
+                </a>
+                <a href="https://www.credly.com/badges/7f57c9fb-544e-4b16-9a19-323a8ec38a43" target="_blank" class="p-4 rounded-xl bg-cardDark border border-borderDark hover:border-accentBlue transition group flex items-center justify-between">
+                    <div>
+                        <p class="text-sm font-bold text-white group-hover:text-accentBlue transition">Garage Essentials</p>
+                        <p class="text-xs text-slate-500 font-mono">Credly Verified</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-up-right-from-square text-xs text-slate-500 group-hover:text-accentBlue"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section id="education" class="space-y-8">
+            <h2 class="text-2xl font-bold text-white flex items-center space-x-3">
+                <span class="text-accentBlue font-mono text-lg">05.</span>
+                <span>Education</span>
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="p-6 rounded-xl bg-cardDark border border-borderDark space-y-2">
+                    <span class="text-xs font-mono text-slate-400">2014 – 2018</span>
+                    <h3 class="text-lg font-bold text-white">B-Tech Information Technology</h3>
+                    <p class="text-sm text-slate-300">College of Engineering Kidangoor (CUSAT)</p>
+                    <p class="text-xs text-accentBlue font-mono">CGPA: 8.02</p>
+                </div>
+
+                <div class="p-6 rounded-xl bg-cardDark border border-borderDark space-y-2">
+                    <span class="text-xs font-mono text-slate-400">2012 – 2014</span>
+                    <h3 class="text-lg font-bold text-white">A-Levels (Bio-Maths)</h3>
+                    <p class="text-sm text-slate-300">St. Thomas Higher Secondary School, Pala</p>
+                    <p class="text-xs text-accentBlue font-mono">Percentage: 92%</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="p-8 rounded-2xl bg-gradient-to-r from-cardDark via-bgDark to-cardDark border border-borderDark text-center space-y-4">
+            <h2 class="text-3xl font-bold text-white">Let's Build Something Resilient</h2>
+            <p class="text-slate-400 max-w-lg mx-auto text-sm leading-relaxed">
+                Whether you want to discuss distributed systems, cloud design patterns, or engineering opportunities, my inbox is open.
+            </p>
+            <div class="pt-2">
+                <a href="mailto:lino.lsebastian@gmail.com" class="inline-block px-8 py-3 rounded-lg bg-accentBlue text-bgDark font-bold hover:bg-sky-300 transition">
+                    Say Hello
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="border-t border-borderDark py-8 text-center text-xs text-slate-500 font-mono">
+        <p>© 2026 Lino Sebastian. Built with HTML, Tailwind CSS & GitHub Pages.</p>
+    </footer>
+
+</body>
+</html>
